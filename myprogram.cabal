@@ -1,0 +1,23 @@
+cabal-version:      3.4
+name:               myprogram
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            BSD-2-Clause
+author:             Domen Kožar
+maintainer:         domen@dev.si
+-- copyright:
+build-type:         Simple
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable myprogram
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base <5, async, time
+    hs-source-dirs:   src
+    default-language: Haskell2010
